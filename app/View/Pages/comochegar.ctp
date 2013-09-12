@@ -6,7 +6,7 @@ echo $this->Html->script('googleMaps/map');
 
 echo 'Como chegar';
 echo '<br/>clique no icone vermelho para mais informações';
-echo '<br/>(obs: Deixei assim neste inicio para não perder tempo arrumando o box de acorde com o conteudo pois no primeiro acesso ele da um scroll)';
+echo '<br/>(obs: Deixei assim neste inicio para não perder tempo arrumando o box de acordo com o conteudo pois no primeiro acesso ele da um scroll)';
 echo '<br/><br/>';
 
 echo $this->Html->div('googleMaps', null, array('id'=>'map_canvas'));

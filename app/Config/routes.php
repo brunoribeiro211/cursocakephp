@@ -30,7 +30,13 @@
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
-	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+	Router::connect('/pagina/*', array('controller' => 'pages', 'action' => 'display'));
+/**
+ * ...exercicios
+ */
+	//Router::connect('/comochegar', array('controller' => 'pages', 'action' => 'display', 'sobreoevento')); //Se existir rotas com o mesmo nome ainda que com o controller ou action diferentes ele acessa o primeiro e ignora as outras rotas
+	Router::connect('/comochegar', array('controller' => 'pages', 'action' => 'display', 'comochegar'));
+	Router::connect('/sobreoevento', array('controller' => 'pages', 'action' => 'display', 'sobreoevento'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

@@ -1,3 +1,3 @@
 <?php
-echo $this->Html->div('rodapeDescricao', 'Todos os diretos reservados');
+echo $this->Html->div('rodapeDescricao', __('Todos os diretos reservados'));
 ?>
