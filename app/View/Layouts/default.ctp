@@ -27,14 +27,14 @@
         <?php
         echo $this->Html->meta('icon');
 
-        echo $this->Html->css('cake.generic');
-        echo $this->Html->css('padrao');
+        echo $this->Html->css(array('cake.generic', 'padrao'));
 
         echo $this->Html->script('jquery.min');
 
         echo $this->fetch('meta');
         echo $this->fetch('css');
         echo $this->fetch('script');
+        echo $this->fetch('mapGoogle');
         ?>
     </head>
     <body>

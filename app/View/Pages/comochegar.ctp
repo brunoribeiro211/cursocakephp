@@ -1,7 +1,6 @@
 <?php
-echo $this->Html->script('http://maps.google.com/maps/api/js?sensor=true');
-echo $this->Html->script('googleMaps/jquery.ui.map.full.min');
-echo $this->Html->script('googleMaps/map');
+
+echo $this->Html->script(array('http://maps.google.com/maps/api/js?sensor=true', 'googleMaps/jquery.ui.map.full.min', 'googleMaps/map'), array('block' => 'mapGoogle'));
 
 
 echo 'Como chegar';
@@ -9,7 +8,7 @@ echo '<br/>clique no icone vermelho para mais informações';
 echo '<br/>(obs: Deixei assim neste inicio para não perder tempo arrumando o box de acordo com o conteudo pois no primeiro acesso ele da um scroll)';
 echo '<br/><br/>';
 
-echo $this->Html->div('googleMaps', null, array('id'=>'map_canvas'));
+echo $this->Html->div('googleMaps', null, array('id' => 'map_canvas'));
 echo '</div>';
 echo $this->Html->scriptBlock("
 	var lat = -22.90497573069154; // Latitude do marcador
