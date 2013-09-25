@@ -34,12 +34,16 @@
 /**
  * ...exercicios
  */
-	//Router::connect('/comochegar', array('controller' => 'pages', 'action' => 'display', 'sobreoevento')); //Se existir rotas com o mesmo nome ainda que com o controller ou action diferentes ele acessa o primeiro e ignora as outras rotas
+        //Se existir rotas com o mesmo nome ainda que com o controller ou action diferentes ele acessa o primeiro e ignora as outras rotas
+	//Router::connect('/comochegar', array('controller' => 'pages', 'action' => 'display', 'sobreoevento'));
 	Router::connect('/comochegar', array('controller' => 'pages', 'action' => 'display', 'comochegar'));
 	Router::connect('/sobreoevento', array('controller' => 'pages', 'action' => 'display', 'sobreoevento'));
         
         //New Router for "Inscriptions"
         Router::connect('/inscricao', array('controller'=>'inscriptions', 'action'=> 'inscription'));
+        
+        //Exemplo
+        //Router::connect('/noticia/:titulo/:id', array('controller'=>'pages', 'action'=>'display'), array('titulo'=>'[a-z]+','id'=>'[0-9]+'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
